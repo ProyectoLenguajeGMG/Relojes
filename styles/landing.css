@@ -34,6 +34,15 @@
     left: 100%;
 }
 
+@media (max-width:700px){
+    .header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
 .logo{
     color: #fff;
     font-size: 25px;
@@ -51,9 +60,74 @@
 }
 
 .navbar a:hover {
-    color: #f00;
+    color: #2fb4cc;
 }
 
 body{
-    background-image: url(https://st2.depositphotos.com/1852625/5395/i/450/depositphotos_53954927-stock-photo-beautiful-landscape-of-scottish-nature.jpg);
+    background: url(https://images.pexels.com/photos/355748/pexels-photo-355748.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+
+article img{
+    max-width: 100%;
+}
+
+article.card{
+    max-width: 350px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin: 1rem;
+    box-shadow: 0 0 12px #d7d7d7;
+    transition: all 400ms ease;
+}
+
+article.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.header-card img{
+    border-radius: 8px 8px 0 0;
+    max-height: 200px;
+    height: 200px;
+    width: 100%;
+}
+
+/* el margin top de card-wardl o use para mover las cartas, porque eran tapadas con el navbar, si causa problemas, probablemente esta sea la causa*/
+
+.card-wrap{
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 75px;
+    cursor: default;
+}
+
+.card footer{
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.card a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 6px;
+    transition: all 400ms ease;
+}
+
+.card a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+@media (max-width:700px) {
+    .card-wrap{
+        margin-top: 150px;
+    }
+}
+
+.texto-card p{
+    margin-top: 10px;
 }
