@@ -64,7 +64,7 @@
 }
 
 body{
-    background: url(https://images.pexels.com/photos/355748/pexels-photo-355748.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-image: url(https://www.florespedia.com/Imagenes/flores-bonitas.jpg);
 }
 
 article img{
@@ -97,7 +97,6 @@ article.card:hover{
 .card-wrap{
     display: flex;
     flex-flow: wrap;
-    margin-top: 75px;
     cursor: default;
 }
 
@@ -123,11 +122,20 @@ article.card:hover{
 }
 
 @media (max-width:700px) {
-    .card-wrap{
-        margin-top: 150px;
+    .div-titulo-inicial h1{
+        margin-top: 200px;
     }
 }
 
 .texto-card p{
     margin-top: 10px;
+}
+
+.div-titulo-inicial{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.div-titulo-inicial h1{
+    margin-bottom: 10px;
 }
