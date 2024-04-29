@@ -5,6 +5,13 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+header img{
+    height:90px;
+    width: 100px;
+    cursor: default;
+    border-radius: 10px;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -43,16 +50,8 @@
     }
 }
 
-.logo{
-    color: #fff;
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: default;
-}
-
 .navbar a{
-    color: #fff;
+    color: #72bca5;
     font-size: 18px;
     text-decoration: none;
     margin-left: 35px;
@@ -64,7 +63,9 @@
 }
 
 body{
-    background-image: url(https://www.florespedia.com/Imagenes/flores-bonitas.jpg);
+    background-image: url(/assets/img/fondodeverdad.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 article img{
@@ -96,6 +97,7 @@ article.card:hover{
 
 .card-wrap{
     display: flex;
+    justify-content: center;
     flex-flow: wrap;
     cursor: default;
 }
@@ -110,20 +112,20 @@ article.card:hover{
     display: inline-block;
     padding: 10px;
     margin-top: 10px;
-    color: #2fb4cc;
-    border: 1px solid #2fb4cc;
+    color: #364461;
+    border: 1px solid #364461;
     border-radius: 6px;
     transition: all 400ms ease;
 }
 
 .card a:hover{
-    background: #2fb4cc;
+    background: #364461;
     color: #fff;
 }
 
 @media (max-width:700px) {
     .div-titulo-inicial h1{
-        margin-top: 200px;
+        margin-top: 250px;
     }
 }
 
@@ -132,10 +134,26 @@ article.card:hover{
 }
 
 .div-titulo-inicial{
-    margin-top: 100px;
+    margin-top: 150px;
     text-align: center;
 }
 
 .div-titulo-inicial h1{
     margin-bottom: 10px;
+}
+
+.div-titulo-inicial{
+    color: #fff;
+}
+
+.footer-abajo {
+    background: #364461;
+}
+
+.footer-abajo ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
 }
