@@ -1,0 +1,80 @@
+header img{
+    height:90px;
+    width: 100px;
+    cursor: default;
+    border-radius: 10px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+}
+
+.header:hover::before{
+    left: 100%;
+}
+
+@media (max-width:700px){
+    .header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.navbar a{
+    color: #72bca5;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #2fb4cc;
+}
+
+body{
+    background-image: url(/assets/img/fondodeverdad.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.footer-abajo {
+    background: #364461;
+}
+
+.footer-abajo ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    color: black;
+}
+
+main{
+    margin-top: 150px;
+}
