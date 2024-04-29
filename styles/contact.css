@@ -6,7 +6,6 @@ header img{
 }
 
 .header{
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -27,7 +26,7 @@ header img{
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
-    transition: .5s;
+    transition: 1s;
 }
 
 .header:hover::before{
@@ -56,7 +55,7 @@ header img{
 }
 
 body{
-    background-image: url(/assets/img/fondodeverdad.jpg);
+    background-color: black;
     background-position: center;
     background-size: cover;
 }
@@ -64,6 +63,7 @@ body{
 
 .footer-abajo {
     background: #364461;
+
 }
 
 .footer-abajo ul{
@@ -72,9 +72,14 @@ body{
     align-items: center;
     list-style: none;
     gap: 10px;
-    color: black;
+    color: #fff;
 }
 
 main{
     margin-top: 150px;
+}
+.container{
+    color: #fff;
+    display: grid;
+    justify-content: center;
 }
